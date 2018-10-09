@@ -7,12 +7,7 @@ main_nav: true
 
 <img src="{{ site.baseurl }}/assets/profile.png" title="Profile Picture" class="profile">
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
-
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely.
-
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Developer Alex 블로그는 Javascrpt, React등 프론트엔드 개발뿐만 아니라 서버, 데이터베이스 등 풀스택 개발자에게 필요한 전반적인 웹 개발 내용을 작성하는 블로그입니다.
 
 
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+주로 개발을 하면서 새롭게 깨닫거나 공부한 내용을 정리해서 공유하려고 합니다. 가끔 일상 및 블로그 번역도 공유하려 합니다. Post내용의 오류나 잘못된 문장 제보는 언제든 환영입니다!

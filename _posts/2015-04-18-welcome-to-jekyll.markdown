@@ -4,7 +4,6 @@ title:  "Welcome to Jekyll!"
 date:   2015-04-18 08:43:59
 author: Ben Centra
 categories: Jekyll
-tags:	jekyll welcome
 cover:  "/assets/instacode.png"
 ---
 
@@ -30,12 +29,12 @@ Use the [Liquid][liquid] `{% raw %}{% highlight <language> %}{% endraw %}` tag t
 
 For instance, this template...
 {% highlight html %}
-{% raw %}{% highlight javascript %}    
-function demo(string, times) {    
-  for (var i = 0; i < times; i++) {    
-    console.log(string);    
-  }    
-}    
+{% raw %}{% highlight javascript %}
+function demo(string, times) {
+  for (var i = 0; i < times; i++) {
+    console.log(string);
+  }
+}
 demo("hello, world!", 10);
 {% endhighlight %}{% endraw %}
 {% endhighlight %}
