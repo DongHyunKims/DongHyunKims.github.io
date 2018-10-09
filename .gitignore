@@ -4,8 +4,6 @@
 _site
 _drafts
 
-assets
-
 # Sass garbage
 .sass-cache
 
