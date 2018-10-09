@@ -10,16 +10,15 @@ exclude:
 
 # Site settings
 title: Developer Alex
-subtitle: "개발 / 일상 등 소소한 이야기 공유하는  공간입니다."
+subtitle: "전반적인 웹 개발에 관한 내용 공유하는 공간입니다."
 email: dhkim.ce@gmail.com
 name: Alex
 description: >
-  자바스크립트 위주로 개발하고 있으며, 풀스택 개발자를 목표로 달려가고 있습니다.
+  자바스크립트, 리엑트 위주로 개발하고 있으며, 풀스택 개발자를 목표로 달려가고 있습니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/home" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+url: "http://donghyunkims.github.io" # the base hostname & protocol for your site
 cover: "/assets/banner5.png"
 logo: "/assets/logo.png"
 
