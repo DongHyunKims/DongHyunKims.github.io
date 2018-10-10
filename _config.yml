@@ -51,13 +51,13 @@ descriptions:
   - cat: jekyll
     desc: "Posts describing Jekyll setup techniques."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: javascript
+    desc: "자바스크립트의 전반적인 내용을 기록합니다."
 
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: alex_disqus
+    shortname: https-donghyunkims-github-io
 
 # Social icons and sharing options
 #

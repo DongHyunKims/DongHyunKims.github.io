@@ -205,6 +205,7 @@ pre code.hljs {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
+
 	.post-meta {
 		@include outer-container;
 		// padding: 1em 0;
@@ -214,6 +215,7 @@ pre code.hljs {
 			text-align: left;
 			font-size: 0.9em;
 		}
+
 		.post-categories {
 			@include span-columns(6);
 			margin-right: 0;
@@ -221,6 +223,7 @@ pre code.hljs {
 			font-size: 0.9em;
 		}
 	}
+
 	.pagination {
 		padding-top: 2em;
 		text-align: center;
@@ -228,9 +231,9 @@ pre code.hljs {
 		.page-number {
 			padding: 0 1em;
 		}
-    a.newer-posts {
-      text-decoration: none;
-    }
+    	a.newer-posts {
+      		text-decoration: none;
+    	}
 	}
 	.site-header-container {
 		color: $white;
