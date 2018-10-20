@@ -21,8 +21,8 @@ comments: true
 
 3. 예제 : 작성한 이메일을 1000명에게 보낸다.
 
-<img src="/assets/Async.png" width="300">
-<img src="/assets/sync.png" width="300">
+<img src="//assets/Async.png" width="300">
+<img src="//assets/sync.png" width="300">
 
 - 위 예제 와 같이 Async는 이메일 발송 작업 예약 후 백그라운드에서 진행 하고 이메일 작성을 먼저 완료 할수 있다. 이메일 발송은 백그라운드에서 진행하며 사용자는 다른 작업 수행이 가능하다. 하지만  sync는 절차적으로 명령이 수행 되며 1000명에게 이메일 발송이 끝나야 이메일 작성이 완료 되며 이메일 발송을 수행하는 동안은 다른 작업을 수행 할 수 없다.
 
@@ -221,9 +221,9 @@ Promise.all([promise1, promise2]).then(function (values) {
 
 6. promise API
 
-<img src="/assets/promiseAPI1.png" />
-<img src="/assets/promiseAPI2.png" />
-<img src="/assets/promiseAPI3.png" />
+<img src="//assets/promiseAPI1.png" />
+<img src="//assets/promiseAPI2.png" />
+<img src="//assets/promiseAPI3.png" />
 
 #### 궁금한점
 
