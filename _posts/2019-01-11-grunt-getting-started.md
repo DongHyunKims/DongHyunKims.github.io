@@ -25,20 +25,20 @@ Grunt를 사용하려면 `설정 (initConfig), 로드 (loadNpmTasks), 등록 (re
 
     1) Grunt cli 설치,  Grunt 설치
 
-    ~~~
-        $npm install -g grunt-cli
-        $npm install --save-dev grunt
-    ~~~
+~~~
+    $npm install -g grunt-cli
+    $npm install --save-dev grunt
+~~~
 
     2) package.json 생성
 
-    ~~~
-        $npm init
-    ~~~
+~~~
+    $npm init
+~~~
 
     3) Gruntfiles.js 파일 생성
 
-    ~~~ javascript
+~~~ javascript
     const sass = require('node-sass');
 
     module.exports = function(grunt) {
@@ -106,22 +106,21 @@ Grunt를 사용하려면 `설정 (initConfig), 로드 (loadNpmTasks), 등록 (re
         // scss 컴파일에도 사용가능하다.
         // 파일의 크기를 줄이기 위해 uglify를 진행한다.
     };
-    ~~~
+ ~~~
 
     4). Grunt plugin 설치
 
-    ~~~
-        $npm install grunt-contrib-concat --save-dev
-        $npm install grunt-sass --save-dev
-        $npm install grunt-contrib-uglify --save-dev
-
-    ~~~
+~~~
+    $npm install grunt-contrib-concat --save-dev
+    $npm install grunt-sass --save-dev
+    $npm install grunt-contrib-uglify --save-dev
+~~~
 
     5). 실행
 
-    ~~~
-        $grunt [task 명]
-    ~~~
+~~~
+    $grunt [task 명]
+~~~
 
 ### 4. Gruntfiles
     1) 프로젝트 파일과 함께 commit해야한다.
