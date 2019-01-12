@@ -26,100 +26,100 @@ Grunt를 사용하려면 `설정 (initConfig), 로드 (loadNpmTasks), 등록 (re
 1) Grunt cli 설치,  Grunt 설치
 
 ~~~
-    $npm install -g grunt-cli
-    $npm install --save-dev grunt
+$npm install -g grunt-cli
+$npm install --save-dev grunt
 ~~~
 
 2) package.json 생성
 
 ~~~
-    $npm init
+$npm init
 ~~~
 
 3) Gruntfiles.js 파일 생성
 
 ~~~ javascript
-    const sass = require('node-sass');
+const sass = require('node-sass');
 
-    module.exports = function(grunt) {
-        // 1. configuration
-        grunt.initConfig({
-            // 파일 concat
-            concat: {
-                js: {
-                    // js폴더 안에 있는 모든 파일에 적용 시킨다.
-                    // src: ['js/jquery-1.12.4.js', 'js/rslides.js'. 'js/scripts.js']
-                    src: ['js/*.js'],
-                    // 저장될 폴더 설정, build/script 파일안에 등록
-                    dest: 'build/scripts.js'
-                },
-                css: {
-                    src: ['css/*.css'],
-                    dest: 'build/styles.css'
-                }
+module.exports = function(grunt) {
+    // 1. configuration
+    grunt.initConfig({
+        // 파일 concat
+        concat: {
+            js: {
+                // js폴더 안에 있는 모든 파일에 적용 시킨다.
+                // src: ['js/jquery-1.12.4.js', 'js/rslides.js'. 'js/scripts.js']
+                src: ['js/*.js'],
+                // 저장될 폴더 설정, build/script 파일안에 등록
+                dest: 'build/scripts.js'
             },
-
-            // sass complie용 설정
-            sass: {
-                options: {
-                    implementation: sass
-                },
-                build: {
-                    files: [{
-                        src: 'css/sass/styles.scss',
-                        dest: 'css/style.css'
-                    }]
-                }
-            },
-
-            // 파일 uglify 설정
-            uglify: {
-                build: {
-                    files: [{
-                        src: 'build/scripts.js',
-                        dest: 'build/scripts.js'
-                    }]
-                }
+            css: {
+                src: ['css/*.css'],
+                dest: 'build/styles.css'
             }
-        });
+        },
+
+        // sass complie용 설정
+        sass: {
+            options: {
+                implementation: sass
+            },
+            build: {
+                files: [{
+                    src: 'css/sass/styles.scss',
+                    dest: 'css/style.css'
+                }]
+            }
+        },
+
+        // 파일 uglify 설정
+        uglify: {
+            build: {
+                files: [{
+                    src: 'build/scripts.js',
+                    dest: 'build/scripts.js'
+                }]
+            }
+        }
+    });
 
 
-        // 2. load plugins
-        grunt.loadNpmTasks('grunt-contrib-concat');
-        grunt.loadNpmTasks('grunt-sass');
-        grunt.loadNpmTasks('grunt-contrib-uglify');
+    // 2. load plugins
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
-        // 3. register tasks
-        grunt.registerTask('run', function() {
-             console.log('running');
-        });
-        grunt.registerTask('sleep', function() {
-             console.log('sleeping');
-        });
-        grunt.registerTask('all', ['concat', 'run']);
+    // 3. register tasks
+    grunt.registerTask('run', function() {
+         console.log('running');
+    });
+    grunt.registerTask('sleep', function() {
+         console.log('sleeping');
+    });
+    grunt.registerTask('all', ['concat', 'run']);
 
-        // js에 설정된 설정으로만 task를 실행한다.
-        grunt.registerTask('concat-js', ['concat:js']);
-        grunt.registerTask('concat-css', ['concat:css']);
+    // js에 설정된 설정으로만 task를 실행한다.
+    grunt.registerTask('concat-js', ['concat:js']);
+    grunt.registerTask('concat-css', ['concat:css']);
 
-        // scss 컴파일에도 사용가능하다.
-        // 파일의 크기를 줄이기 위해 uglify를 진행한다.
-    };
+    // scss 컴파일에도 사용가능하다.
+    // 파일의 크기를 줄이기 위해 uglify를 진행한다.
+};
  ~~~
 
 4) Grunt plugin 설치
 
 ~~~
-    $npm install grunt-contrib-concat --save-dev
-    $npm install grunt-sass --save-dev
-    $npm install grunt-contrib-uglify --save-dev
+$npm install grunt-contrib-concat --save-dev
+$npm install grunt-sass --save-dev
+$npm install grunt-contrib-uglify --save-dev
 ~~~
 
 5) 실행
 
 ~~~
-    $grunt [task 명]
+$grunt [task 명]
 ~~~
 
 ### 4. Gruntfiles
