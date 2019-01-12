@@ -126,17 +126,17 @@ $grunt [task 명]
 
 1) 프로젝트 파일과 함께 commit해야한다.
 
-    - wrapper function
-    - project, task configuration
-    - grunt플러그인과 task로딩
-    - custom task
+- wrapper function
+- project, task configuration
+- grunt플러그인과 task로딩
+- custom task
 
 2) project, task configuration / custom task
 
-    - 대부분의 grunt작업은 grunt.initConfig 메소드에 전달된 객체에 정의된 configration data에 의존한다.
-    - 일반적으로 많이 사용되는 concatenation, minification, linting같은 task를 grunt plugin으로 사용할수 있다.
-    - 프로젝트에 Grunt 플러그인이 제공하지 않는 task가 필요한 경우 Gruntfile 내부에서 사용자 정의 작업을 정의 할 수 있다.
-    - custom task는 Gruntfile에 정의 할 필요가 없습니다. 외부 .js 파일에 정의되어 grunt.loadTasks 메소드를 통해 로드 할 수 있다.
+- 대부분의 grunt작업은 grunt.initConfig 메소드에 전달된 객체에 정의된 configration data에 의존한다.
+- 일반적으로 많이 사용되는 concatenation, minification, linting같은 task를 grunt plugin으로 사용할수 있다.
+- 프로젝트에 Grunt 플러그인이 제공하지 않는 task가 필요한 경우 Gruntfile 내부에서 사용자 정의 작업을 정의 할 수 있다.
+- custom task는 Gruntfile에 정의 할 필요가 없습니다. 외부 .js 파일에 정의되어 grunt.loadTasks 메소드를 통해 로드 할 수 있다.
 
 ### 참조
 
